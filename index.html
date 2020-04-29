@@ -22,8 +22,13 @@
       line-height: 1.5;
     }
 
+    input,
+    select {
+      font-size: 100%;
+    }
+
     main {
-      width: 60%;
+      width: 90%;
       margin: 0 auto;
     }
 
@@ -33,7 +38,7 @@
 
     .banner {
       background-image: url("banner.png");
-      height: 376px;
+      height: 197px;
       background-size: cover;
       border-radius: 10px;
     }
@@ -41,6 +46,16 @@
     img {
       display: block;
       width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      main {
+        width: 668px;
+      }
+
+      .banner {
+        height: 376px;
+      }
     }
   </style>
 </head>
@@ -66,6 +81,10 @@
         #mc_embed_signup form {
           border: 1px solid #999;
           border-radius: 10px;
+        }
+
+        #mc_embed_signup input[type=submit] {
+          -webkit-appearance: none;
         }
 
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
